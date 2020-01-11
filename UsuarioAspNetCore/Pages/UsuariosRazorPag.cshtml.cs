@@ -4,15 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using UsuarioAspNetCore.Data;
 using UsuarioAspNetCore.Models;
 
 namespace UsuarioAspNetCore.Pages
 {
-    public class IndexModel : PageModel
+    public class UsuariosRazorPagModel : PageModel
     {
         private readonly UsuarioAspNetCore.Data.Contexto _context;
 
-        public IndexModel(UsuarioAspNetCore.Data.Contexto context)
+        public UsuariosRazorPagModel(UsuarioAspNetCore.Data.Contexto context)
         {
             _context = context;
         }
